@@ -3,14 +3,20 @@
 <head>
 	<title>Movies and Series Website</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-VxIf2b8NJndBlLDeE0Jjrvm03y9LRb8Wic4e4vZwR30ZP0oB5MyoivSd2zAmABtFq9X2VgxdMQJWet7+qGwqng==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	  
 </head>
 <body>
 	<header>
-		<h1>Movies and Series</h1>
+		<h1 class="title">Movies And Series</h1>
+		
+
 		<form class="search-form">
 			<input type="text" placeholder="Search...">
 			<button type="submit">Search</button>
 		</form>
+		<button class="login-button"><i class="fas fa-sign-in-alt"></i> Login</button>
+
    </div>
     <div class="categories">
       <button class="btn active" data-category="all">All</button>
@@ -20,34 +26,35 @@
 	</header>
 	<main>
 		<section class="cards">
-			<article>
+			<article class="card" data-category="movies">
 				<a href="https://soap2day.id/movie/luther-the-fallen-sun-vqro2/1-full">
-					<img src="https://static.bunnycdn.ru/i/cache/images/3/31/314a82d38989315b205c0f5b57ac5d61.jpg-w380" alt="Luther">
-					<h2>Luther</h2>
-				</a>
+				<img src="https://static.bunnycdn.ru/i/cache/images/3/31/314a82d38989315b205c0f5b57ac5d61.jpg-w380" alt="Movies"></a>
+				<h2>Luther</h2>
 				<p>Brilliant but disgraced detective John Luther breaks out of prison to hunt down a sadistic serial killer who is terrorising London.</p>
-			</article>
-			<article>
+				<a href="https://soap2day.id/movie/luther-the-fallen-sun-vqro2/1-full">Watch Now</a>
+			  </article>
+
+			<article class="card" data-category="movies">
 				<a href="https://soap2day.id/movie/rock-dog-3-battle-the-beat-829rn/1-full">
-					<img src="https://static.bunnycdn.ru/i/cache/images/9/92/92363e24ac9a0849d7f2c1a7c5254fe5.jpg-w380" alt="Rock Dog 3">
-					<h2>Rock Dog 3</h2>
-				</a>
+				<img src="https://static.bunnycdn.ru/i/cache/images/9/92/92363e24ac9a0849d7f2c1a7c5254fe5.jpg-w380" alt="Movies"></a>
+				<h2>Rock Dog 3</h2>
 				<p>When the young performers on a music contest show admit they have never heard of Angus Scattergood, 
 					Bodi is compelled to join the show to restore the Rock Legend's good name.</p>
-			</article>
-			<article>
+				<a href="https://soap2day.id/movie/rock-dog-3-battle-the-beat-829rn/1-full">Watch Now</a>
+			  </article>
+
+			<article class="card" data-category="movies">
+				
 				<a href="https://soap2day.id/movie/alpha-5kx30/1-full">
-					<img src="https://static.bunnycdn.ru/i/cache/images/7/7e/7ec9c97725baacda209fa16eecf947c8.jpg-w380" alt="Alpha">
+					<img src="https://static.bunnycdn.ru/i/cache/images/7/7e/7ec9c97725baacda209fa16eecf947c8.jpg-w380" alt="Alpha"></a>
 					<h2>Alpha</h2>
-				</a>
 				<p>In the prehistoric past, a young man struggles to return home after being separated from his tribe during a buffalo hunt.
 					 He finds a similarly lost wolf companion and starts a friendship that would change humanity.</p>
 			</article>
-			<article>
+			<article class="card" data-category="movies">
 				<a href="https://soap2day.id/movie/braven-yk600/1-full">
-					<img src="https://static.bunnycdn.ru/i/cache/images/1/17/17d4d96808c59cbd6aac2df5018420c3.jpg-w380" alt="Braven">
+					<img src="https://static.bunnycdn.ru/i/cache/images/1/17/17d4d96808c59cbd6aac2df5018420c3.jpg-w380" alt="Braven"></a>
 					<h2>Braven</h2>
-				</a>
 				<p>A logger defends his family from a group of dangerous drug runners.</p>
 			</article>
 		</section>
