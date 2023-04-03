@@ -20,12 +20,50 @@ h1 {
 }
 
 .search-form {
-	position: absolute;
-	top: 50%;
-	right: 20px;
-	transform: translateY(-50%);
+	margin-top: 20px;
 	display: flex;
-}
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .search-form input[type="text"] {
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px 0 0 5px;
+  }
+  
+  .search-form button[type="submit"] {
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+  }
+  
+  .categories {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+  }
+  
+  .categories .btn {
+	padding: 10px 20px;
+	background-color: #f4f4f4;
+	color: #333;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+  }
+  
+  .categories .btn.active {
+	background-color: #333;
+	color: #fff;
+  }
 
 input[type="text"] {
 	padding: 5px;
