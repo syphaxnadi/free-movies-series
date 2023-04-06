@@ -17,7 +17,7 @@
 				<input type="password" name="password" required>
 				<label>Password</label>
 			</div>
-			<a href="web/moviespage.html" class="button">Login</a>
+			<button class="login-button" onclick="redirectTomoviesPage()">Login</button>
 		</form>
 		<p id="error" class="error"></p>
 	</div>
@@ -39,7 +39,7 @@
 			// Perform validation and authentication
 			if (isValidUser(username, password)) {
 				// If the user is valid, redirect to the home page
-				window.location.replace("home.html");
+				window.location.replace("web/moviespage.html");
 			} else {
 				// If the user is not valid, display an error message
 				document.getElementById("error").innerHTML = "Invalid username or password.";
