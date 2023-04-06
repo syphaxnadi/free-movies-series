@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Login Page</title>
+	<link rel="stylesheet" href="stylelogin.css">
+	
+</head>
+<body>
+	<div class="login-container">
+		<h1>Login</h1>
+		<form>
+		  <div class="input-group">
+			<input type="text" name="username" required>
+			<label>Username</label>
+		  </div>
+		  <div class="input-group">
+			<input type="password" name="password" required>
+			<label>Password</label>
+		  </div>
+		  <button class="login-button" onclick="return validate()">Login</button>
+		</form>
+		<p id="error" class="error"></p>
+		<div class="signup-container">
+		  <span>Don't have an account?</span>
+		  <a href="sign up/signup.html">Sign Up</a>
+		</div>
+	  </div>
+	  
+	  
+	<script>
+		const loginButton = document.querySelector('.login-button');
+		loginButton.addEventListener('click', () => {
+			// Handle login functionality here
+		});
+
+		function validate() {
+			var username = document.forms[0]["username"].value;
+			var password = document.forms[0]["password"].value;
+
+			if (username == "") {
+				document.getElementById("error").innerHTML = "Please enter your username.";
+				return false;
+			}
+
+			if (password == "") {
+				document.getElementById("error").innerHTML = "Please enter your password.";
+				return false;
+			}
+
+			// Perform validation and authentication
+			if (isValidUser(username, password)) {
+				// If the user is valid, redirect to the home page
+				window.location.replace("web/moviespage.html");
+				return true;
+			} else {
+				// If the user is not valid, display an error message
+				document.getElementById("error").innerHTML = "Invalid username or password.";
+				return false;
+			}
+		}
+
+		function isValidUser(username, password) {
+			// Perform validation and authentication logic here
+			// Return true if the user is valid, false otherwise
+			return false;
+		}
+
+		function redirectTologinPage() {
+			window.location.href = "web/moviespage.html";
+		}
+	</script>
+	</main>
+	<script src="login.js"></script>
+</body>
+</html>

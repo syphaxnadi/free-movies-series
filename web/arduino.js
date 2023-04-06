@@ -29,14 +29,13 @@ categoryButtons.forEach(button => {
   
   const searchForm = document.querySelector('.search-form');
   const searchInput = searchForm.querySelector('input');
-  const searchBtn = searchForm.querySelector('button');
   
-  searchBtn.addEventListener('click', e => {
-	e.preventDefault();
-  
-	const searchTerm = searchInput.value.trim().toLowerCase();
+  searchInput.addEventListener('input', e => {
+	
+	const searchTerm = e.target.value.trim().toLowerCase();
   
 	cards.forEach(card => {
+		
 	  const title = card.querySelector('h2').textContent.trim().toLowerCase();
   
 	  if (title.includes(searchTerm)) {
@@ -44,12 +43,15 @@ categoryButtons.forEach(button => {
 	  } else {
 		card.style.display = 'none';
 	  }
+	  
 	});
   });
+  
   vloginButton.addEventListener('click', () => {
 	// Handle login functionality here
   });
   function redirectToLoginPage() {
 	window.location.href = "login/login.html";
   }
+
   

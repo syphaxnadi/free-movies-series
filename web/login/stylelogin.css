@@ -1,0 +1,97 @@
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    background-image: url("wallpaperflare.com_wallpaper.jpg");
+    background-size: cover;
+  }
+  
+/* Login container */
+.login-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  text-align: center;
+}
+
+  /* Login title */
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  /* Input group */
+  .input-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 2px solid #CCCCCC;
+    font-size: 18px;
+    padding: 10px 5px;
+    width: 100%;
+  }
+  
+  label {
+    color: #999999;
+    font-size: 16px;
+    left: 5px;
+    pointer-events: none;
+    position: absolute;
+    top: 10px;
+    transition: 0.2s ease all;
+  }
+
+  input[type="text"]:focus ~ label, input[type="password"]:focus ~ label, input[type="text"]:valid ~ label, input[type="password"]:valid ~ label {
+    font-size: 14px;
+    top: -20px;
+    color: #333333;
+  }
+  
+  /* Login button */
+  .login-button {
+    background-color: #333333;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #4D4D4D;
+  }
+  
+  /* Error message */
+  .error {
+    color: #FF0000;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .signup-container {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #999999;
+  }
+  
+  .signup-container a {
+    color: #333333;
+    text-decoration: none;
+  }
+  
+  .signup-container a:hover {
+    text-decoration: underline;
+  }
+  
