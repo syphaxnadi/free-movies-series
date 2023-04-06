@@ -1,5 +1,5 @@
 body {
-	background-image: url('C:/Users/RMI/Documents/mywebsite/backgrounds for my website/welcome-page.jpg');
+	background-image: url('backgrounds for my website/welcome-page.jpg');
 	background-size: cover;
 	position: relative; /* Required for ::before pseudo-element to work */
 }

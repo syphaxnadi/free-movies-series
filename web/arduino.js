@@ -50,6 +50,6 @@ categoryButtons.forEach(button => {
 	// Handle login functionality here
   });
   function redirectToLoginPage() {
-	window.location.href = "C:/Users/RMI/Documents/mywebsite/login/login.html";
+	window.location.href = "login/login.html";
   }
   
