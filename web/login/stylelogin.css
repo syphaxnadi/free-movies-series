@@ -1,17 +1,12 @@
-
-
-
- 
-  html {
-    height: 100%;
-  }
   body {
     margin:0;
     padding:0;
     font-family: sans-serif;
     background-image: url("wallpaperflare.com_wallpaper.jpg");
   }
-  
+  html {
+    height: 100%;
+  }
   .login-box {
     position: absolute;
     top: 50%;
